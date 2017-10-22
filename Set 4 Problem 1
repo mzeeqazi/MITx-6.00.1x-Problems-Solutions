@@ -17,7 +17,9 @@ You will want to use the SCRABBLE_LETTER_VALUES dictionary defined at the top of
 Do not assume that there are always 7 letters in a hand! The parameter n is the number of letters required for a bonus score (the maximum number of letters in the hand). Our goal is to keep the code modular - if you want to try playing your word game with n=10 or n=4, you will be able to do it by simply changing the value of HAND_SIZE!
 Testing: If this function is implemented properly, and you run test_ps4a.py, you should see that the test_getWordScore() tests pass. Also test your implementation of getWordScore, using some reasonable English words.
 Fill in the code for getWordScore in ps4a.py and be sure you've passed the appropriate tests in test_ps4a.py before pasting your function definition here.
-```python
+
+_______________
+
 def getWordScore(word, n):
     """
     Returns the score for a word. Assumes the word is a valid word.
@@ -35,7 +37,7 @@ def getWordScore(word, n):
     """
     # set initial value
     outputWordScore = 0
-
+    
     # sum score for a word
     for letter in word:
         outputWordScore += SCRABBLE_LETTER_VALUES[letter]
@@ -46,4 +48,3 @@ def getWordScore(word, n):
         return outputWordScore*len(word)+50
     else:
         return outputWordScore*len(word)
-```

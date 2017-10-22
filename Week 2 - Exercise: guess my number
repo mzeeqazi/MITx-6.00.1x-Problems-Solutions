@@ -9,7 +9,8 @@ Be sure to handle the case when the user's input is not one of h, l, or c.
 
 When the user enters something invalid, you should print out a message to the user explaining you did not understand their input.
 Then, you should re-ask the question, and prompt again for input.
-```python
+_______________________________________
+
 low = 0
 high = 100
 answer = ''
@@ -29,4 +30,3 @@ while answer != 'c':
         high = guess
 
 print('Game over. Your secret number was:', guess)
-```
