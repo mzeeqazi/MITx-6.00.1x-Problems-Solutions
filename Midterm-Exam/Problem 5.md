@@ -3,7 +3,9 @@
 Hint: You will need to traverse both lists in parallel.
 
 This function takes in two lists of numbers and returns a number.
-```py
+_________________________
+
+
 def dotProduct(listA, listB):
 
     '''
@@ -20,4 +22,3 @@ def dotProduct(listA, listB):
         outputSum += listA[i] * listB[i]
         
     return outputSum
-```
